@@ -17,8 +17,8 @@
     <!-- navbar section start from here  -->
     <section class="nav-bar-section bg-[rgb(240,203,129)] pb-16">
         <div class="navbar flex justify-around">
-            <div class="nab_bar_left">
-                <button>Blog</button>
+            <div class="nab_bar_left bg-[rgb(180,244,97)] px-3 py-2 rounded-md font-bold">
+                <a href="blog.html" id="bloog_button">Blog</a> 
             </div>
             <div class="nav_bar_middel_section">
                 <img src="assets/logo.png" alt="">
@@ -37,18 +37,18 @@
     <!-- button section start from here  -->
     <section class="two_button">
         <div class="donation_and_history flex justify-center mt-24 space-x-12">
-            <button class="bg-[rgb(180,244,97)] px-3 py-2 rounded-md font-bold">Donation</button>
-            <button class=" font-bold">History</button>
+            <button id="donation" class="bg-[rgb(180,244,97)] px-3 py-2 rounded-md font-bold">Donation</button>
+            <button id="history" class="font-bold">History</button>
         </div>
     </section>
     <!-- button section ends here  -->
 
 
     <!-- donation section start from here  -->
-    <section class="donations_post">
+    <section id="donation_section" class="donations_post">
         <!-- donation post number 1  -->
         <!-- left_part  -->
-        <div class="donation_part_of_new_khali flex mt-24 rounded-md mb-16 p-6 space-x-11 mr-28 ml-36 border-2 solid border-[rgba(17,17,17,0.1)]">
+        <div  class="donation_part_of_new_khali flex mt-24 rounded-md mb-16 p-6 space-x-11 mr-28 ml-36 border-2 solid border-[rgba(17,17,17,0.1)]">
             <div class="left_part_of_new_khali ">
                 <img class="w-[500px]" src="assets/noakhali.png" alt="">
             </div>
@@ -133,6 +133,28 @@
     </section>
     <!-- donation section ends here -->
 
+    <!-- history section start from here  -->
+
+    <section id="history_section" class="history_section hidden">
+        <div class="history_part border border-x-4 bg-red-300 mt-32 mb-36">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex earum officiis voluptas fugit exercitationem. Nulla accusantium sapiente ratione mollitia nesciunt nemo, culpa, nobis quae itaque tenetur et. Odit, nesciunt praesentium.</p>
+        </div>
+
+    </section>
+
+
+    <!-- history section ends here  -->
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- footter section start here -->
     <!-- [rgb(249,247,243)] -->
@@ -146,7 +168,7 @@
      <!-- footer section ends here  -->
 
 
-
+<script src="js/button-swtiching.js"></script>
 
 </body>
 
