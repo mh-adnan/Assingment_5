@@ -26,7 +26,7 @@
             </div>
             <div class="nab_bar_right_section">
                 <img src="assets/coin.png" alt="">
-                <p>5500 BDT</p>
+                <p id="starting-balance">5500 BDT</p>
             </div>
         </div>
     </section>
@@ -56,7 +56,7 @@
             <div class="right_part_of_new_khali">   
                 <div class="top_right_new_khali flex items-center">
                     <img  src="assets/coin.png" alt="">
-                    <p>0 BDT</p>
+                    <p id="update_balance_of_new_khali">0 BDT</p>
                 </div>
                 <h4 class="font-bold">Donate for Flood at Noakhali, Bangladesh</h4>
                 <p class="w-[600px] text-lg">The recent floods in Noakhali have caused significant damage to homes infrastructure. Your donation will help provide essential supplies and to those affected by this disaster. Every contribution, big or small, makes difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need</p>
@@ -87,20 +87,21 @@
             <div class="right_part_of_feni">   
                 <div class="top_right_feni flex items-center">
                     <img  src="assets/coin.png" alt="">
-                    <p>0 BDT</p>
+                    <p id="update_balance_of_feni">0 BDT</p>
                 </div>
                 <h4 class="font-bold">Donate for Flood at Noakhali, Bangladesh</h4>
                 <p class="w-[600px] text-lg">The recent floods in Noakhali have caused significant damage to homes infrastructure. Your donation will help provide essential supplies and to those affected by this disaster. Every contribution, big or small, makes difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need</p>
                 <div class="feni_donation_amount  p-4 rounded-md w-full">
-                        <input 
-                            type="text" 
-                            placeholder="Write Donation Amount" 
-                            class="w-full p-2 border rounded-md text-left"
-                        >
-                </div>
-                <div class="feni_donation_amount_button p-4 rounded-md w-full text-center bg-[rgb(180,244,97)]">
-                    <button>Donate Now</button>
-                </div>
+                    <input 
+                        type="number"
+                        id="feni_amount" 
+                        placeholder="Write Donation Amount" 
+                        class="w-full p-2 border rounded-md text-left"
+                    >
+            </div>
+            <div id="feni_donate_now" class="feni_donation_amount_button p-4 rounded-md w-full text-center bg-[rgb(180,244,97)]">
+                <button>Donate Now</button>
+            </div>
             </div>
         </div>
 
@@ -115,20 +116,21 @@
             <div class="right_part_of_quota">   
                 <div class="top_right_quota flex items-center">
                     <img  src="assets/coin.png" alt="">
-                    <p>0 BDT</p>
+                    <p id="update_balance_of_quota">0 BDT</p>
                 </div>
                 <h4 class="font-bold">Donate for Flood at Noakhali, Bangladesh</h4>
                 <p class="w-[600px] text-lg">The recent floods in Noakhali have caused significant damage to homes infrastructure. Your donation will help provide essential supplies and to those affected by this disaster. Every contribution, big or small, makes difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need</p>
                 <div class="quota_donation_amount  p-4 rounded-md w-full">
-                        <input 
-                            type="text" 
-                            placeholder="Write Donation Amount" 
-                            class="w-full p-2 border rounded-md text-left"
-                        >
-                </div>
-                <div class="quota_donation_amount_button p-4 rounded-md w-full text-center bg-[rgb(180,244,97)]">
-                    <button>Donate Now</button>
-                </div>
+                    <input 
+                        type="number"
+                        id="quota_amount" 
+                        placeholder="Write Donation Amount" 
+                        class="w-full p-2 border rounded-md text-left"
+                    >
+            </div>
+            <div id="quota_donate_now" class="quota_donation_amount_button p-4 rounded-md w-full text-center bg-[rgb(180,244,97)]">
+                <button>Donate Now</button>
+            </div>
             </div>
         </div>
     </section>
