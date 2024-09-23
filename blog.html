@@ -14,18 +14,18 @@
 </head>
 <body>
      <!-- navbar section start from here  -->
-     <section class="nav-bar-section bg-[rgb(240,203,129)] pb-16">
+     <section class="nav-bar-section bg-[rgba(249,247,243,0.8)] pb-16">
         <div class="navbar flex justify-around">
-            <div class="nab_bar_left bg-[rgb(180,244,97)] px-3 py-2 rounded-md font-bold">
+            <div class="nab_bar_left bg-[rgba(180,244,97,0.8)] px-3 py-2 rounded-md font-bold ">
                 <a href="index.html" id="home_button">Home</a> 
             </div>
-            <div class="nav_bar_middel_section">
+            <div class="nav_bar_middel_section flex items-center space-x-2">
                 <img src="assets/logo.png" alt="">
-                <p>Donate Bangladesh</p>
+                <p class="font-bold">Donate Bangladesh</p>
             </div>
             <div class="nab_bar_right_section">
                 <img src="assets/coin.png" alt="">
-                <p>5500 BDT</p>
+                <p class="font-bold">5500 BDT</p>
             </div>
         </div>
     </section>
@@ -33,44 +33,114 @@
 
 
    <section class="FAQ-title-section">
-    <div class="faq_header mt-14 mb-20">
+    <div class="faq_header mt-14 mb-20 ml-28">
         <p class="text-4xl">Importand FAQ</p>
     </div>
 
    </section>
-
-
     <!-- FAQ section start here  -->
-
     <section class="FAQ">
         <div class="FAQ_SECTION mr-64 ml-20">
             <div class="collapse collapse-arrow bg-base-200">
                 <input type="radio" name="my-accordion-2" checked="checked" />
-                <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+                <div class="collapse-title text-xl font-medium">What is the Document Object Model (DoM)?</div>
                 <div class="collapse-content">
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet repellat, commodi molestiae saepe fugiat consectetur harum ducimus placeat temporibus quisquam laboriosam ratione quaerat aliquam aspernatur iure officia amet illum reprehenderit!</p>
+                    <div class="max-w-3xl mx-auto p-6 bg-gray-50 rounded-lg shadow-md">
+                        <p class="text-gray-700 leading-relaxed">
+                          The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of a webpage as a tree of objects, where each node corresponds to a part of the document, such as elements, attributes, or text. The DOM allows JavaScript and other programming languages to interact with and manipulate HTML and XML documents.
+                          <br><br>
+                          In simpler terms, the DOM lets you access and modify the structure, style, and content of a webpage dynamically after the page has loaded.
+                        </p>
+                      </div>
                 </div>
               </div>
               <div class="collapse collapse-arrow bg-base-200">
                 <input type="radio" name="my-accordion-2" />
-                <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+                <div class="collapse-title text-xl font-medium">How do you select an element from DoM?</div>
                 <div class="collapse-content">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet repellat, commodi molestiae saepe fugiat consectetur harum ducimus placeat temporibus quisquam laboriosam ratione quaerat aliquam aspernatur iure officia amet illum reprehenderit!</p>
+                    <div class="max-w-3xl mx-auto p-6 bg-white rounded-lg shadow-md">
+                        <h2 class="text-xl font-semibold mb-4">Selecting an Element from the DOM in JavaScript</h2>
+                        <p class="text-base text-gray-700 leading-relaxed">
+                          To select an element from the DOM in JavaScript, you can use various methods. The most commonly used methods are:
+                        </p>
+                        <ul class="list-disc pl-6 mt-4 space-y-2 text-gray-700">
+                          <li>
+                            <span class="font-semibold">getElementById():</span> Selects an element by its <code class="text-blue-600 bg-blue-100 px-1 py-0.5 rounded">id</code>.
+                          </li>
+                          <li>
+                            <span class="font-semibold">getElementsByClassName():</span> Selects all elements with a given class name.
+                          </li>
+                          <li>
+                            <span class="font-semibold">getElementsByTagName():</span> Selects all elements with a specific tag name.
+                          </li>
+                          <li>
+                            <span class="font-semibold">querySelector():</span> Selects the first element that matches a given CSS selector.
+                          </li>
+                          <li>
+                            <span class="font-semibold">querySelectorAll():</span> Selects all elements that match a given CSS selector.
+                          </li>
+                        </ul>
+                      </div>
                 </div>
               </div>
               <div class="collapse collapse-arrow bg-base-200">
                 <input type="radio" name="my-accordion-2" />
-                <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+                <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM,and why is it useful?</div>
                 <div class="collapse-content">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet repellat, commodi molestiae saepe fugiat consectetur harum ducimus placeat temporibus quisquam laboriosam ratione quaerat aliquam aspernatur iure officia amet illum reprehenderit!</p>
+                    <div class="max-w-4xl mx-auto p-6 bg-gray-100 rounded-lg shadow-lg">
+                        <h2 class="text-2xl font-bold mb-4">Event Delegation</h2>
+                        <p class="mb-6">
+                            Event delegation is a technique where you attach a single event listener to a parent element that listens for events on its child elements. Instead of attaching individual event listeners to each child, the event listener on the parent can handle events for all current and future child elements using event bubbling (where events triggered on child elements propagate up to parent elements).
+                        </p>
+                        <h3 class="text-xl font-semibold mb-4">Why is it useful?</h3>
+                        <div class="space-y-4">
+                            <div class="p-4 bg-white rounded-md shadow-sm">
+                                <h4 class="font-medium text-lg mb-2">Performance</h4>
+                                <p>
+                                    Instead of adding many event listeners to child elements, which can slow down performance, you attach just one listener to the parent.
+                                </p>
+                            </div>
+                            <div class="p-4 bg-white rounded-md shadow-sm">
+                                <h4 class="font-medium text-lg mb-2">Dynamic Content</h4>
+                                    <div class="max-w-3xl mx-auto p-6 bg-gray-50 rounded-lg shadow-lg">
+                                        <p class="text-base leading-relaxed text-gray-700">
+                                          The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of a webpage as a tree of objects, where each node corresponds to a part of the document, such as elements, attributes, or text. The DOM allows JavaScript and other programming languages to interact with and manipulate HTML and XML documents.
+                                          <br><br>
+                                          In simpler terms, the DOM lets you access and modify the structure, style, and content of a webpage dynamically after the page has loaded.
+                                        </p>
+                                     </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How do you manipulate an attributes and styles using the DOM?
+                </div>
+                <div class="collapse-content">
+                    <div class="max-w-3xl mx-auto p-6 bg-white rounded-lg shadow-md">
+                        <h2 class="text-xl font-semibold mb-4">Manipulating Attributes and Styles in the DOM</h2>
+                        <p class="text-base text-gray-700 leading-relaxed">
+                          You can manipulate an element’s attributes and styles dynamically using JavaScript in the DOM.
+                        </p>
+                        <h3 class="text-lg font-semibold mt-4">Manipulating Attributes:</h3>
+                        <ul class="list-disc pl-6 mt-2 space-y-2 text-gray-700">
+                          <li>
+                            <span class="font-semibold">getAttribute():</span> Retrieves the value of an attribute.
+                          </li>
+                          <li>
+                            <span class="font-semibold">setAttribute():</span> Sets or changes the value of an attribute.
+                          </li>
+                          <li>
+                            <span class="font-semibold">removeAttribute():</span> Removes an attribute.
+                          </li>
+                        </ul>
+                      </div>
                 </div>
               </div>
         </div>
-
     </section>
-
     <!-- FAQ section ends here  -->
-
-
 </body>
 </html>
