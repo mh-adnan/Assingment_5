@@ -11,10 +11,19 @@ document.getElementById('new_khali_donate_now').addEventListener('click', functi
 
     const donation_amount = getBalanceFromInput('new_khali_amount');
 
-    if (!donation_amount || isNaN(donation_amount) || donation_amount <= 0 || donation_amount > main_balance ) {
+    if ( typeof(donation_amount)!='number' || isNaN(donation_amount) || donation_amount <= 0 || donation_amount > main_balance ) {
         alert("Please enter a valid donation amount");
         return;
     }
+
+
+   
+
+
+  
+
+
+
 
     main_balance -= donation_amount;
     document.getElementById('starting-balance').innerText = main_balance.toFixed(2);
