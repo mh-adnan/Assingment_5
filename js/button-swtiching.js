@@ -6,7 +6,6 @@ document.getElementById('history').addEventListener('click',function(){
     document.getElementById('donation').classList.remove('bg-[rgb(180,244,97)]', 'px-3', 'py-2', 'rounded-md');
 
 })
-
 document.getElementById('donation').addEventListener('click',function(){
     document.getElementById('donation_section').classList.remove('hidden');
     document.getElementById('history_section').classList.add('hidden');   
