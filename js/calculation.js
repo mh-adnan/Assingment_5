@@ -1,7 +1,6 @@
 let main_balance = parseFloat(document.getElementById('starting-balance').innerHTML)
 
 
-
 // for new_khali
 document.getElementById('new_khali_donate_now').addEventListener('click', function(event) {
     event.preventDefault();
@@ -19,10 +18,7 @@ document.getElementById('new_khali_donate_now').addEventListener('click', functi
 
     document.getElementById('moda_popup').classList.remove('hidden');
     document.getElementById('my_modal_3').showModal();
-
-   
 });
-
 
 
 // for feni
